@@ -1,190 +1,74 @@
+<?php
+	include_once('includes/session.php');
+	
+	if(!isset($_POST['noun-plural-1'])){
+
+		$host  = $_SERVER['HTTP_HOST'];
+		$uri  = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
+		$extra = 'form.php';
+	
+		header("Location: http://$host$uri/$extra");
+		die();
+	}
+	
+	/*session_destroy();*/
+?>
+
 <!doctype html>
-<html lang="en-ca">
+<html>
 <head>
-<meta charset="utf-8">
-<title>DinoLand</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="styles/styles.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>City in chaos</title>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/story.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-	<div id="wrapper" class="container-fluid">
-	<div class="jumbotron">
-		<h1>Story Bout A Dino</h1>
-			
-
-                <?php
-					$start = '
-					<div class="progress progress-striped">
-   			 <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
-       			 <span class="prog">0%</span>
-  			 </div>
-			</div>
-						<p>Go!</p>
-						<form role="form" method="post" action="' . $_SERVER["PHP_SELF"] . '?pg=first">
-						  <input type="submit" name="btn-start" class="btn btn-lg btn-danger" value="Start">
-						</form>
-						
-						';
+    <div id="wrapper" class="container">
+    
+    	<?php
+			include_once("includes/header.php");
+		?>
+        
+       <div id="main">
+        	<div id="pCont">
+        		<p><span class="pFirst">C</span>ongradulations, You have turned time and changed destiny to be rewritten as you directed them. Take a gander at what your handy work has done for our companion</p>
+        	</div>
+            
+            <img class="img-responsive border-call" src="images/border_call.svg" alt="">
+            
+            <div class="col-sm-2"></div>
+            
+            <div class="col-sm-8" id="storyCont">
+            
+            	<?php
 					
-					//First page of fields
-					$first = '
-						<div class="progress progress-striped">
-   			 <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 33%;">
-       			 <span class="prog">33%</span>
-  			 </div>
-			</div>
-						
-						<form role="form" method="post" action="' . $_SERVER["PHP_SELF"] . '?pg=second">
-							<div class="form-group">
-								<label for="dino">Type of Dinosaur</label>
-								<input type="text" id="dino" name="dino" class="form-control" value="">
-							</div>
-							
-							<div class="form-group"> 
-								<label for="name">A boys name</label>
-								<input type="text" id="name" name="name" class="form-control" value="">
-								
-							</div>
-							<div class="form-group">
-								<label for="celeb">A Celebrity</label>
-								<input type="text" id="celeb" name="celeb" class="form-control" value="">
-								
-							</div>
-						  <input type="submit" name="btn-first" class="btn btn-danger" value="Next">
-							
-						</form>
-					';
-					
-					//Second page of fields
-					$second = '
-						<div class="progress progress-striped">
-   			 <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 66%;">
-       			 <span class="prog">66%</span>
-  			 </div>
-			</div>
-			
-						<form role="form" method="post" action="' . $_SERVER["PHP_SELF"] . '?pg=third">
-							<div class="form-group">
-								<label for="job">An Occupation</label>
-								<input type="text" id="job" name="job" class="form-control" value="">
-							</div>
-							
-							<div class="form-group">
-								<label for="fight">A type of fighting</label>
-								<input type="text" id="fight" name="fight" class="form-control" value="">
-							</div>
-							
-							<div class="form-group">
-								<label for="store">A Hardware Store</label>
-								<input type="text" id="store" name="store" class="form-control" value="">
-							</div>
-							
-						  <input type="submit" name="btn-second" class="btn btn-danger" value="Next">
-						</form>
-					';
-					
-					//Third page of fields
-					$third = '
-						<div class="progress progress-striped">
-   				 <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-       			 <span class="prog">100%</span>
-  				 </div>
-				</div>
-			
-					   <form role="form" method="post" action="' . $_SERVER["PHP_SELF"] . '?pg=end">
-							<div class="form-group">
-								<label for="tool">A tool</label>
-								<input type="text" id="tool" name="tool" class="form-control" value="">
-							</div>
-							
-							<div class="form-group">
-								<label for="body">A body part</label>
-								<input type="text" id="body" name="body" class="form-control" value="">
-							</div>
-							
-							<div class="form-group">
-								<label for="weapon">A weapon</label>
-								<input type="text" id="weapon" name="weapon" class="form-control" value="">
-							</div>
-							<input type="submit" name="btn-third" class="btn btn-danger" value="Submit!">
-						</form>
-					';
-					
-					
-					//Story Page
-					$end = '
-					
-						<h1>Dino Land - Part I</h1>
-						
-						
-						<p>Once upon a time there was a ______ named ______ who was the king of the world, he thought he was better than everybody else until ______ came along and started to steal his fame. After a year of competing with such a famous celebrity, he thought it was time to destroy them. He hired a ______ who proceeded to teach him ______ on his spare time. Then the day had come for him to attack, he went to ______ and bought a ______, and the ______ of a giraffe, once he got home he found his enemy dead in the village with a ______ in his hand. The End. </p>
-						
-						
-						<form role="form" method="post" action="' . $_SERVER["PHP_SELF"] . '">
-							  <input type="submit" name="btn-restart" class="btn btn-lg btn-danger" value="Restart!">
-						</form>
-					';
-					
-					
-					session_start();
-					if(isset($_POST['btn-start'])){	
-						echo $first;	
-							
-					}else if(isset($_POST['btn-first'])){
-						
-						
-						$_SESSION['words'] = $_POST;
-						if(($_SESSION['words']['dino'] =='') || ($_SESSION['words']['name'] == '') || ($_SESSION['words']['celeb'] == '')) {
-							//go back to first page if there are blank fields
-							header('location: story.php');
-							
-						}else{
-							//if all is correct go to second page
-							echo $second;
-						}
-					
-					}else if(isset($_POST['btn-second'])){
-						
-						
-						$_SESSION['words'] += $_POST;
-						if(($_SESSION['words']['job'] == '') || ($_SESSION['words']['fight'] == '') || ($_SESSION['words']['store'] == '')) {
-							//go back to first page if there are blank fields
-							header('location: story.php');
-							
-						}else{
-							//if all is correct go to third page
-							echo $third;
-						}
-					
-					}else if(isset($_POST['btn-third'])){
-						
-						
-						$_SESSION['words'] += $_POST;
-						if(($_SESSION['words']['tool'] == '') || ($_SESSION['words']['body'] == '') || ($_SESSION['words']['weapon'] == '')) {
-							//go back to first page if there are blank fields
-							header('location: story.php');
-							
-						}else{
-							//if all is correct go to last page
-							echo $end;
-						}
-						
-					}else if(isset($_POST['btn-restart'])){
-						//go back to first page if restart button is clicked
-						header('location: story.php');	
-						
-						//session destroy to get rid of field entries
-						session_destroy(); 
-
-					}else{
-						echo $start;
-					}
+					echo "<p>In the city where you must fight to survive. He made his living selling <span>" . $_POST['noun-plural-1'] . "</span><br> on the corner and the <span>" . $_POST['gp-1'] . "</span>, wanted in.<br>
+							I don't know who this guy is but i want him and his <span>" . $_POST['noun-plural-1']." ". $_POST['con-1'] . "</span> !<br>
+							He had one chance and his chance was to fight back, <span>". $_POST['celeb-1'] ."</span><br>
+				            Listen to me these are my <span>" . $_POST['noun-plural-1'] ."</span> and i'm not going to let you take them.<br>
+                            A block buster event with double the excitement and tripple the action."."<br> Get <span>" . $_POST['dir-1'] ."</span>...,  get <span>" . $_POST['dir-1'] ."</span> again<br>
+                            Coming this <span>". $_POST['seas-1'] ."</span><br><span>". $_POST['celeb-1'] . "</span> is the <span>". $_POST['size-1'] ." ".$_POST['noun-plural-1']."</span> Boy <br>";
+                            
+                           
 				?>
-	</div>
-	</div>
+                
+            </div>
+            
+            <div class="col-sm-2"></div>
+            
+            <img class="img-responsive border-call" src="images/border_call.svg" alt="">
+            
+        </div><!--main-->
+    
+    
+     <?php
+			include_once("includes/footer.php");
+      ?>
+    </div><!--end of div wrapper-->
 </body>
-</html>
+</html>    
+

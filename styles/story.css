@@ -1,0 +1,43 @@
+#main{
+  background-color:#a46e33;   
+}
+
+.firstLetter{
+    text-align: center;
+    font-family: cursive;
+    font-size: 24px;
+
+}
+
+p{
+    text-align: center;
+    font-family: cursive;
+    font-size: 16px;
+}
+
+.btn{
+    background-color: #336a72;
+    color: #c99f37;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+span{
+    color: #c1b577;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.pFirst{
+    color: #333;
+    font-size: 16px;
+}
+
+footer{
+    background-color: #322f2a;   
+}
+
+footer p{
+    color: antiquewhite;   
+}
