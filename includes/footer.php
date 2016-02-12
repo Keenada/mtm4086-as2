@@ -1,7 +1,9 @@
-<footer>
-	<div class="sectionBorder"></div>
-    <p>All content is &copy; Christian Griffin 2015 unless otherwise stated. All rights reserved.<br>
-    Calligraphic borders provided by <a href="http://www.webdesignhot.com/">Web Design Hot!</a><br>
-    Header and footer borders taken from <a href="http://us.blizzard.com/en-us/">Blizzard Entertainment</a>'s WarCraft fansite pack.<br>
-    Original header illustration provided by <a href="http://wallpoper.com/">Wallpoper</a>.</p>
-</footer>
+<div class="row">
+    <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 credits">
+        <h3>Credits</h3>
+        <p><a href="https://www.youtube.com/watch?v=h4UqMyldS7Q.">Cube, Ice. Today Was A Good Day</a></p>
+        <p><a href="https://unsplash.com/mollymartirez">Palm Tree Photo</a></p>
+        <p><a href="https://www.google.com/fonts/specimen/Roboto">Roboto Font</a></p>
+        <p><a href="http://www.dafont.com/sharkyspot.font">Sharkyspot Font</a></p>
+    </div>
+</div>

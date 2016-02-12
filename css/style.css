@@ -1,0 +1,210 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body,
+html {
+    height: 100vh;
+    background-color: #31353a;
+    background-image: -webkit-linear-gradient(#31353a, #2f3337);
+    background-image: linear-gradient(#31353a, #2f3337);
+}
+
+.wrapper {
+    width: 100%;
+    /*max-width: 1200px;*/
+    margin: 0 auto;
+}
+
+.home-header {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    background: #105353;
+    background: -webkit-linear-gradient(-225, #d62548, #105353);
+    background: -webkit-linear-gradient(135deg, #d62548, #105353);
+    background: linear-gradient(315deg, #d62548, #105353);
+}
+
+.splash-img {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/splash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.6;
+}
+
+.title-plate {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.title-plate h1 {
+    padding: 30px;
+    color: white;
+    font-family: 'Sharkyspot', cursive;
+    font-size: 10em;
+    text-shadow: 0px 0px 15px black;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform: all 2000 ease-in-out;
+    -ms-transform: all 2000 ease-in-out;
+    transform: all 2000 ease-in-out;
+}
+
+.home-content {
+    color: white;
+    position: relative;
+    z-index: 0;
+    min-height: 100vh;
+    padding: 50px 0px;
+}
+
+.home-content .content-box {
+    width: 100%;
+}
+
+.rap-content{
+    color: white;
+}
+
+.rap{
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    margin-top: 25vh;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 5px;
+}
+
+.word{
+    font-weight: bold;
+    color: #d62548;
+}
+
+.vidbg{
+    position: absolute;
+    top:0;
+    height:100vh;
+    background: #FFF;
+    width:100vw;
+    z-index: 1;
+}
+.vidbg #bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 2;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);;
+    background-size: cover; 
+}
+
+footer{
+    width: 100%;
+}
+
+.credits{
+    background-color: white;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center
+}
+
+.form-group {
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    position: relative;
+}
+
+.form-control {
+    display: block;
+    height: 36px;
+    width: 100%;
+    border: none;
+    border-radius: 0 !important;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+    border-bottom: 1px solid #757575;
+    color: #d62548;
+}
+
+.input-group .form-control {
+    position: relative;
+    z-index: inherit;
+    float: inherit;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.form-control:focus {
+    border-color: #d62548;
+    outline: none;
+    box-shadow: none;
+}
+
+label {
+    position: absolute;
+    color: #999;
+    font-weight: 300;
+    left: 10;
+    top: 7px;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.btn-primary {
+    background-color: #1c9393;
+    border-color: #1c9393;
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.btn-primary:hover {
+    background-color: #146868;
+    border-color: #146868;
+}
