@@ -1,0 +1,368 @@
+/***********************************************
+                    CSS RESET
+**********************************************/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/***********************************************
+                   MAIN CSS
+**********************************************/
+
+
+body {
+ background-color: #fdfaf5;   
+}
+
+h1, h2, h3 {
+ font-family: 'Passion One', cursive;   
+}
+    h1 {
+      font-size: 4em;
+    }
+
+        h1 img {
+          width: 40%;
+          max-width: 180px;    
+          float: left;
+            
+        } 
+    
+     h2 {
+      font-size: 2.8em;
+      color: #a0c64b;
+      margin-bottom: 2%;
+      text-shadow: 2px 2px #3a3a3a;     
+    }
+
+      h3 {
+      font-size: 1.3em;
+      margin-bottom: 2%;   
+    }
+
+p {
+  font-family: 'Droid Sans', sans-serif;
+  line-height: 1.3em;    
+}
+
+header {
+  width: 100%;
+  height: 200px;    
+  padding: 2%;   
+  margin-bottom: 2%;    
+  background-color: #c6724b;
+  text-align: center;
+  align-content: center;    
+}
+     @media screen and (min-width: 450px){
+        header h1 {
+           border-bottom: 5px solid #85a935; 
+        }
+     }
+
+.page-1 {
+    background-color: #85bed8;
+    padding: 2%;
+    overflow: hidden;
+}
+
+    .page-1 img {
+        width: 80%;
+    }
+
+.page-2 {
+    background-color: #91b37a;
+    padding: 2%;
+    overflow: auto;
+}
+
+
+.page-3 {
+    background-color: #f0ebd1;   
+}
+
+.page-3 h1 {
+    margin-bottom: 4%;
+}
+
+footer {
+  width: 100%;
+  height: 100px;    
+  padding: 2%;
+  text-align: center;    
+  background-color: #282828;
+  color: #ffffff;    
+}
+
+
+/***********************************************
+                   QUOTE
+**********************************************/
+
+
+
+blockquote{
+  display:block;
+  background: #fff;
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 20px;
+  position: relative;
+  
+  /*Font*/
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: bold;    
+  font-size: 1em;
+  line-height: 1.2;
+  color: #36492A;
+  text-align: justify;
+  
+  /*Borders - (Optional)*/
+  border-left: 15px solid #c6724b;
+  border-right: 2px solid #c6724b;
+
+}
+
+blockquote::before{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+  
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #a0c64b;
+  
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top:5px;
+}
+
+blockquote::after{
+  /*Reset to make sure*/
+  content: "";
+}
+
+blockquote a{
+  text-decoration: none;
+  background: #eee;
+  cursor: pointer;
+  padding: 0 3px;
+  color: #c76c0c;
+}
+
+blockquote a:hover{
+ color: #666;
+}
+
+blockquote em{
+  font-style: italic;
+}
+
+
+/***********************************************
+                   FORM
+**********************************************/
+
+#myForm {    
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: none;    
+}
+
+    @media screen and (min-width: 770px){
+        #myForm {    
+          text-align: center;    
+        }
+    }
+
+
+.book {
+  width: 60%;   
+}
+
+
+.form-inline .form-control {
+    width: 70%;
+}
+    
+    .small-icon {
+      width: 8%;    
+    }
+
+.char-box {
+    margin-bottom: 2%;
+}
+
+.err-msg {
+  font-size: 1.4em;    
+  color: #c11b1b;
+  font-family: 'Passion One', cursive;     
+}
+
+
+
+
+
+/***********************************************
+                   BUTTONS
+**********************************************/
+
+.back-btn {
+  clear: both;    
+}
+
+#start-btn, #back-btn, #create-btn {
+  margin-top: 2%;
+  margin-bottom: 4%;    
+  -webkit-border-radius: 7;
+  -moz-border-radius: 7;
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 3px 0px #945437;
+  -moz-box-shadow: 0px 3px 0px #945437;
+  box-shadow: 0px 3px 0px #945437;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #c6724b;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;    
+}
+
+#start-btn:hover, #back-btn:hover, #create-btn:hover  {
+  background: #f58f5f;
+  text-decoration: none;
+  border: none;      
+}
+
+
+/***********************************************
+                   STORY
+**********************************************/
+
+.story-box {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 4%;
+    overflow: auto;
+    
+}
+
+    .character {
+      width: 80%;    
+      margin: 0 auto;
+      position: relative;
+    }
+
+        
+        @media screen and (min-width: 600px){
+
+            .character {
+              width: 100%;   
+            }
+            
+        }
+
+    .wteeth {
+      text-align: center;       
+      width: 100%;
+      overflow: auto;    
+    }
+
+
+         .wolf {
+          width: 80%;
+          margin: 0 auto; 
+        }
+
+            @media screen and (min-width: 600px){
+
+                .wolf {
+                  width: 40%;
+                  margin-top: 5%;     
+                }
+
+            }
+
+
+        .teeth {   
+          width: 80%;    
+  
+        }
+
+              @media screen and (min-width: 600px){
+
+                .teeth {
+                  width: 60%;   
+                }
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
