@@ -3,16 +3,18 @@
 ?>
 
 <!doctype html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>The Library of Fate</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Bartender Says:</title>
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="scripts/form.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -24,7 +26,7 @@
         
         <div id="main">
         	<div id="pCont">
-        		<p><span class="pFirst">Y</span>ou have made a brave choice, traveller. The fates are not always kind to those who challenge them. Complete the information below as you see fit, and discover the rewards for your actions! And the consequences...</p>
+        		<p>You have made a brave choice, traveller. The fates are not always kind to those who challenge them. Complete the information below as you see fit, and discover the rewards for your actions! And the consequences...</p>
         	</div>
             
             <img class="img-responsive border-call" src="images/border_call.svg" alt="">
@@ -43,49 +45,56 @@
             
             	<form action="story.php" role="form" method="post">
                 
-            	<div class="col-sm-6">
+            	<div class="col-sm-4">
+                <h2>Story 1</h2>
                     <div class="form-group">
-                        <label for="noun-plural-1">Noun (Plural):</label>
-                        <input type="text" id="noun-plural-1" name="noun-plural-1" class="form-control" placeholder="eg. cars, doors, plates...">
+                        <label for="noun-plural-1">A....</label>
+                        <input type="text" id="noun-plural-1" name="noun-plural-1" class="form-control" placeholder="eg. An Animal, person, or thing...">
                     </div>
                     <div class="form-group">
-                        <label for="noun-1">Noun:</label>
-                        <input type="text" id="noun-1" name="noun-1" class="form-control" placeholder="eg. house, knife, statue...">
+                        <label for="noun-1">His...</label>
+                        <input type="text" id="noun-1" name="noun-1" class="form-control" placeholder="eg. Coat, bag, wallet...">
                     </div>
                     <div class="form-group">
-                        <label for="verb-1">Verb:</label>
-                        <input type="text" id="verb-1" name="verb-1" class="form-control" placeholder="eg. run, jump, type...">
-                    </div>
-                    <div class="form-group">
-                        <label for="adjective-1">Adjective:</label>
-                        <input type="text" id="adjective-1" name="adjective-1" class="form-control" placeholder="eg. careful, slow, strong...">
-                    </div>
-                    <div class="form-group">
-                        <label for="number-1">Number:</label>
-                        <input type="text" id="number-1" name="number-1" class="form-control" placeholder="eg. six, seventeen...">
+                        <label for="verb-1">Looks...</label>
+                        <input type="text" id="verb-1" name="verb-1" class="form-control" placeholder="eg. Wife, face, house...">
                     </div>
                 </div><!--col-sm-6-->
                 
-                <div class="col-sm-6">
+                <div class="col-sm-4">
+                <h2>Story 2</h2>
+                    <!--next story-->
+                    <div class="form-group">
+                        <label for="adjective-1">Into something...</label>
+                        <input type="text" id="adjective-1" name="adjective-1" class="form-control" placeholder="eg. soup, bushes, monkey cage...">
+                    </div>
+                    <div class="form-group">
+                        <label for="number-1">Object...</label>
+                        <input type="text" id="number-1" name="number-1" class="form-control" placeholder="eg. Rock, car, rug...">
+                    </div>
+                    <div class="form-group">
+                        <label for="noun-plural-2">Whip...</label>
+                        <input type="text" id="noun-plural-2" name="noun-plural-2" class="form-control" placeholder="eg. Wheelchair LOL, scooter, bike...">
+                    </div>
+                </div>
+                <h2>Story 3</h2>
+                <!--next story-->
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="noun-2">Person, animal or thing...</label>
+                        <input type="text" id="noun-2" name="noun-2" class="form-control" placeholder="eg. Person, animal or thing...">
+                    </div>
                 	<div class="form-group">
-                        <label for="noun-plural-2">Noun (Plural):</label>
-                        <input type="text" id="noun-plural-2" name="noun-plural-2" class="form-control" placeholder="eg. cars, doors, plates...">
+                        <label for="verb-2">Drink, map, food...</label>
+                        <input type="text" id="verb-2" name="verb-2" class="form-control" placeholder="eg. Drink, map or food...">
                     </div>
                     <div class="form-group">
-                        <label for="noun-2">Noun:</label>
-                        <input type="text" id="noun-2" name="noun-2" class="form-control" placeholder="eg. house, knife, statue...">
-                    </div>
-                	<div class="form-group">
-                        <label for="verb-2">Verb:</label>
-                        <input type="text" id="verb-2" name="verb-2" class="form-control" placeholder="eg. run, jump, type...">
+                        <label for="place-1">A liquid...</label>
+                        <input type="text" id="place-1" name="place-1" class="form-control" placeholder="eg. Piss, milkshake, soup...">
                     </div>
                     <div class="form-group">
-                        <label for="place-1">Place:</label>
-                        <input type="text" id="place-1" name="place-1" class="form-control" placeholder="eg. Paris, Spark St...">
-                    </div>
-                    <div class="form-group">
-                        <label for="body-part-plural-1">Body Part (Plural):</label>
-                        <input type="text" id="body-part-plural-1" name="body-part-plural-1" class="form-control" placeholder="eg. arms, hairs, lungs...">
+                        <label for="noun-plural-1">A something...</label>
+                        <input type="text" id="noun-plural-1" name="noun-plural-1" class="form-control" placeholder="eg. person, animal or thing...">
                     </div>
                 </div>
                 
@@ -94,14 +103,12 @@
                 </div><!--btnContainer-->
                 
                 </form>
+                <br><br>
             </div><!--col-sm-8-->
             
             <div class="col-sm-2"></div>
             
-            <img class="img-responsive border-call" src="images/border_call.svg" alt="">
-            
         </div><!--main-->
-        
         <?php
 			include_once("includes/footer.php");
 		?>
