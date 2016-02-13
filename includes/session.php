@@ -2,6 +2,9 @@
 	//declare session variable
 	session_start();
 	
+		
+
+	
 	//if the session variable 'progress' isn't set, there are two options (see below)...
 	if(!isset($_SESSION['progress'])){
 		
@@ -12,7 +15,8 @@
 		if($pgName == "index.php"){
 			
 			$_SESSION['progress'] = "";
-		
+            
+           
 		//or they typed in the url for the form page without visiting index.php, in which case we need to redirect them back there	
 		} else {
 			
@@ -25,4 +29,5 @@
 		
 		}
 	}
-?>
+
+?>    

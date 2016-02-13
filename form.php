@@ -1,111 +1,75 @@
 <?php
 	include_once('includes/session.php');
+    include_once("includes/header.php");
 ?>
-
-<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>The Library of Fate</title>
-    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="styles/main.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script src="scripts/form.js"></script>
-</head>
 
 <body>
 	<div id="wrapper" class="container">
     
-    	<?php
-			include_once("includes/header.php");
-		?>
         
         <div id="main">
         	<div id="pCont">
-        		<p><span class="pFirst">Y</span>ou have made a brave choice, traveller. The fates are not always kind to those who challenge them. Complete the information below as you see fit, and discover the rewards for your actions! And the consequences...</p>
+        		<p>On this first test we are having you test the durability of the keyboard that's right in-front of you. So we will need you to go ahead a fill out the form below. This is a new type of keyboard that's supposed to be really durable. So go ahead and type away! </p>
         	</div>
             
-            <img class="img-responsive border-call" src="images/border_call.svg" alt="">
+            <div class="col-sm-12">
             
-            <div class="col-sm-2"></div>
-            
-            <div class="col-sm-8">
-            
-            	<div class="col-sm-12">
+            	<div id="prog" class="col-sm-10">
                     <div class="progress">
                         <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
                         </div>
                         <span>0%</span>
                     </div>
                 </div>
-            
-            	<form action="story.php" role="form" method="post">
+            <div id="el">
                 
-            	<div class="col-sm-6">
-                    <div class="form-group">
-                        <label for="noun-plural-1">Noun (Plural):</label>
-                        <input type="text" id="noun-plural-1" name="noun-plural-1" class="form-control" placeholder="eg. cars, doors, plates...">
-                    </div>
-                    <div class="form-group">
-                        <label for="noun-1">Noun:</label>
-                        <input type="text" id="noun-1" name="noun-1" class="form-control" placeholder="eg. house, knife, statue...">
-                    </div>
-                    <div class="form-group">
-                        <label for="verb-1">Verb:</label>
-                        <input type="text" id="verb-1" name="verb-1" class="form-control" placeholder="eg. run, jump, type...">
-                    </div>
-                    <div class="form-group">
-                        <label for="adjective-1">Adjective:</label>
-                        <input type="text" id="adjective-1" name="adjective-1" class="form-control" placeholder="eg. careful, slow, strong...">
-                    </div>
-                    <div class="form-group">
-                        <label for="number-1">Number:</label>
-                        <input type="text" id="number-1" name="number-1" class="form-control" placeholder="eg. six, seventeen...">
-                    </div>
-                </div><!--col-sm-6-->
+            </div>
+            	<form action="form2.php" role="form" method="post">
                 
-                <div class="col-sm-6">
-                	<div class="form-group">
-                        <label for="noun-plural-2">Noun (Plural):</label>
-                        <input type="text" id="noun-plural-2" name="noun-plural-2" class="form-control" placeholder="eg. cars, doors, plates...">
+            	<div class="col-xs-12">
+                    <div class="form-group col-xs-12 col-sm-6">
+                        <label for="noun1">Noun</label>
+                        <input type="text" id="noun1" name="noun1" class="form-control" placeholder="eg. car, door, plate...">
                     </div>
-                    <div class="form-group">
-                        <label for="noun-2">Noun:</label>
-                        <input type="text" id="noun-2" name="noun-2" class="form-control" placeholder="eg. house, knife, statue...">
+                    <div class="form-group col-xs-12 col-sm-6">
+                        <label for="emotion1">Emotion:</label>
+                        <input type="text" id="emotion1" name="emotion1" class="form-control" placeholder="eg. happy, sad, confused...">
                     </div>
-                	<div class="form-group">
-                        <label for="verb-2">Verb:</label>
-                        <input type="text" id="verb-2" name="verb-2" class="form-control" placeholder="eg. run, jump, type...">
+                    <div class="form-group col-xs-12 col-sm-6">
+                        <label for="fm1">Family Memeber:</label>
+                        <input type="text" id="fm1" name="fm1" class="form-control" placeholder="eg. mom, dad, uncle...">
                     </div>
-                    <div class="form-group">
-                        <label for="place-1">Place:</label>
-                        <input type="text" id="place-1" name="place-1" class="form-control" placeholder="eg. Paris, Spark St...">
+                    <div class="form-group col-xs-12 col-sm-6">
+                        <label for="fm2">Family Memeber:</label>
+                        <input type="text" id="fm2" name="fm2" class="form-control" placeholder="eg. mom, dad, uncle...">
                     </div>
-                    <div class="form-group">
-                        <label for="body-part-plural-1">Body Part (Plural):</label>
-                        <input type="text" id="body-part-plural-1" name="body-part-plural-1" class="form-control" placeholder="eg. arms, hairs, lungs...">
+                    <div class="form-group col-xs-12">
+                        <label for="emotion2">Emotion:</label>
+                        <input type="text" id="emotion2" name="emotion2" class="form-control" placeholder="eg. happy, sad, confused...">
                     </div>
+                    
+                </div>
+
+                
+                <div class="formBtn btnContainer" style="margin-bottom:20px;">
+                    <input type="submit" class="btn" value="NEXT TEST">
                 </div>
                 
-                <div class="formBtn btnContainer">
-                    <input type="submit" class="btn" value="CONTINUE">
-                </div><!--btnContainer-->
-                
                 </form>
-            </div><!--col-sm-8-->
+            </div>
             
-            <div class="col-sm-2"></div>
             
-            <img class="img-responsive border-call" src="images/border_call.svg" alt="">
             
-        </div><!--main-->
+            
+        </div>
         
         <?php
 			include_once("includes/footer.php");
 		?>
-        
-    </div><!--wrapper-->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="jquery.hexagonprogress.js"></script>
+<script src="scripts/form.js"></script>
+
+    </div>
 </body>
 </html>

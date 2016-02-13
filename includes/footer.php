@@ -1,7 +1,10 @@
 <footer>
 	<div class="sectionBorder"></div>
-    <p>All content is &copy; Christian Griffin 2015 unless otherwise stated. All rights reserved.<br>
-    Calligraphic borders provided by <a href="http://www.webdesignhot.com/">Web Design Hot!</a><br>
-    Header and footer borders taken from <a href="http://us.blizzard.com/en-us/">Blizzard Entertainment</a>'s WarCraft fansite pack.<br>
-    Original header illustration provided by <a href="http://wallpoper.com/">Wallpoper</a>.</p>
+    <p>Created by <a href="https://www.facebook.com/koskicreations/" target="_blank">Jordan Koski</a><br>
+    Mad libs provided by <a href="http://www.olympiansrule.tzingaro.com/activities/madLibs.html" target="_blank">OLYMPIANS</a><br>
+    Images from <a href="http://www.freeimages.com" target="_blank">freeimages.com</a><br>
+    Inspiration form <a href="http://www.thinkwithportals.com/" target="_blank">Portal 2</a>
+    </p>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
