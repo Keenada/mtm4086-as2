@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;  
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+@-webkit-keyframes BGanimate
+    {
+    0%   {background-color: rgba(0, 0, 0, 0.74);}
+    50%  {background-color: rgba(14, 39, 4, 0.74);}
+    100% {background-color: rgba(0, 0, 0, 0.74);}
+    }
+
+@font-face {
+    font-family: 'typewriter';
+    src: url('../fonts/typewriter/SpecialElite-webfont.eot');
+    src: url('../fonts/typewriter/SpecialElite-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/typewriter/SpecialElite-webfont.woff') format('woff'),
+         url('../fonts/typewriter/SpecialElite-webfont.ttf') format('truetype'),
+         url('../fonts/typewriter/SpecialElite-webfont.svg#special_eliteregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html,body{
+    height: 100%
+}
+
+body {
+    background: url("../images/tractorBeam.png");
+    position: relative;
+    background-position: center;
+}
+
+.pulseLayer {
+    -webkit-animation: BGanimate 4s infinite;
+    background-color: rgba(14, 39, 4, 0.74);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url("../images/grunge.png");
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    z-index: -3;
+}
+
+.container {
+    background-color: black;
+    -webkit-box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.75);
+    z-index: 5;
+}
+
+nav {
+    margin: 0 -15px;
+    background-color: black;
+    color: white;
+}
+
+.navbar-dark{
+    background-color: black;
+    color: white;
+}
+
+.nav {
+    float:right;
+}
+
+.nav-link {
+    color: white;
+}
+.navbar-light {
+    border-radius: 0;
+}
+
+.carousel-caption h3 {
+    text-shadow: 1px 1px 4px black;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+footer {
+    position: relative;
+}
+
+.btnContainer {
+    text-align: center;
+}
+
+.lil-ufo-row{
+    margin-bottom: 20px;
+}
+
+.lil-ufos {
+    max-width: 100%;
+}
+
+.intro {
+    font-family: typewriter;
+    color: white;
+}
+
+.btnContainer {
+    margin: 20px 0 20px 0;
+    padding: 20px;
+    clear: both;
+}
+
+.btn {
+    margin: 0 auto;
+    background-color: darkgreen;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #013b01;
+}
+
+.form-group label {
+    color: white;
+    font-family: typewriter;
+}
+
+.pagey {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.page-item.active .page-link, .page-item.active .page-link:focus, .page-item.active .page-link:hover {
+    background-color: darkgreen;
+    border-color: darkgreen;
+}
+
+.story {
+    font-family: typewriter;
+    color: white;
+}
+
+.card {
+    background-color: rgba(26, 0, 42, 0.88);
+    color: white;
+    -webkit-box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.6);
+    box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.6);
+    border: none;
+}
+
+.card .btn {
+    border: none;
+}
+
+.card .btn:hover {
+    background-color: #013b01;
+}
+
+.messageHidden {
+    color: white;
+    -webkit-transition: color 1s ease;
+	-moz-transition: color 1s ease;
+	-o-transition: color 1s ease;
+	transition: color 1s ease;
+}
+
+.messageRevealed {
+    color: #a00000;
+}
+
+.theyreHere {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    background-image: url("../images/theyreHere.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.theyreHere:hover {
+    background-image: url("../images/theyreHereGreen.png");
+}
+
+/*
+.theyreHere img {
+    max-width: 100%;   
+}
+
+.theyreHere img:hover {
+
+}
+*/
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 80%;
+    top: 10%;
+   /* background: url("../images/spooky.gif") no-repeat;*/
+    background-size: cover;
+    display: none;
+    z-index: 1000;
+}
+
+.overlay img {
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    opacity: 1;
+}
+
+
+@media screen and (max-width:576px) {
+ 
+    .nav {
+        float: none;
+    }
+    
+    .navbar-toggler {
+        float: right;   
+    }
+    
+    .navbar-toggleable-xs {
+        clear: both;
+        
+    }
+    
+    .navbar-nav .nav-item {
+        float: none;   
+    }
+    
+    .navbar-nav .nav-item + .nav-item {
+        margin-left: 0;
+    }
+    
+    .carousel-caption h3 {
+        text-shadow: 1px 1px 4px black;
+        font-weight: bold;
+        font-size: 18px;
+    }
+}
