@@ -15,7 +15,7 @@
         
         <div id="main">
         	<div id="pCont">
-        		<p>If you noticed that your hands have turned bright pink that is most likely due to an allergic reaction to the super slick gel that was put on they keyboard. This super slick gel is supposed to help you type faster but if your hands get hot and sweat, it can cause your hands to turn bright pink. Even i you did this test on a mobile device, the front-end web designers managed to get the gel on your mobile keyboard too. So if your hands are pink, just flag down a test assistant, and they will get Mark in here to give you that antidote. Once your hands are all set, you can start this next test. </p>
+        		<p>If you noticed that your hands have turned bright pink that is most likely due to an allergic reaction to the super slick gel that was put on they keyboard. This super slick gel is supposed to help you type faster, but, if your hands get hot and sweaty, it can cause your hands to turn bright pink. Even if you did this test on a mobile device, the front-end web designers managed to get the gel on your mobile keyboard too. So if your hands are pink, just flag down a test assistant, and they will get Mark in here to give you that antidote. Once your hands are all set, you can start this next test. </p>
         	</div>
             
             <div class="col-sm-12">
