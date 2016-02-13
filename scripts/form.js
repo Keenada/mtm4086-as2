@@ -1,5 +1,3 @@
-// JavaScript Document
-
 var perc;
 
 $(document).ready(function() {

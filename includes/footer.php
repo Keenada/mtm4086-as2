@@ -1,7 +1,7 @@
 <footer>
-	<div class="sectionBorder"></div>
-    <p>All content is &copy; Christian Griffin 2015 unless otherwise stated. All rights reserved.<br>
-    Calligraphic borders provided by <a href="http://www.webdesignhot.com/">Web Design Hot!</a><br>
-    Header and footer borders taken from <a href="http://us.blizzard.com/en-us/">Blizzard Entertainment</a>'s WarCraft fansite pack.<br>
-    Original header illustration provided by <a href="http://wallpoper.com/">Wallpoper</a>.</p>
+    <p>Parallax Star Background (CSS) by <a href="http://codepen.io/saransh/pen/BKJun">Saransh Sinha</a></p>
+    <p>Stock images from <a href="http://all-free-download.com/">All-Free-Downloads</a> and <a href="https://pixabay.com">Pixabay</a></p>
+    <p>Theme inspired from <a href="http://www.starwars.com/">Star Wars</a></p>
+    
+    
 </footer>
