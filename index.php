@@ -1,13 +1,16 @@
 <?php
 	include_once('includes/session.php');
+//	include_once('includes/session.php');
 ?>
 
 <!doctype html>
-<html>
+<html class="bg">
 <head>
+    <link href='https://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>The Library of Fate</title>
+    <title>Story Generator</title>
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -16,33 +19,83 @@
 </head>
 
 <body>
-	<div id="wrapper" class="container">
+
+   
+   
+    <?php
+        include_once("includes/nav.php");
+    ?>
+
+	<div id="wrapper" class="container-fluid">
+    
+        
     
     	<?php
 			include_once("includes/header.php");
 		?>
+       
+   
         
-        <div id="main">
-        	<div id="pCont">
-        		<p><span class="pFirst">W</span>elcome to The Library, traveller! Here is recorded the epic histories and tales of mankind, those that have passed, and those that are yet to come. The power of this place is a mystery, but what is known is that a precious few who come here are given a precious gift, and a terrible responsibility: the power to challenge the cycle of destiny and rewrite the fates to their whim. Are you among them, traveller? Do you possess the gift of destiny? Enter, and find out. Enter, and rewrite history. Enter, and challenge fate!
-                <br>
-				<?php
-                
-					
-				
-				?></p>
-        	</div>
-            <img class="img-responsive border-call" src="images/border_call.svg">
+         <div class="jumbotron">
+            <h1>Create A Great Story!</h1>
+            <p class="lead">We take pride in creating stories and sharing them with you, but now it's your turn to create a story. Whenever your ready hit the button to continue.</p>
+<!--            <p><a class="btn btn-lg btn-danger" href="#" role="button">Let's Begin!</a></p>-->
+        </div>
+        
+
+
+                <button type="button" class="btn btn-danger btn-lg btn-block">Let's Begin!</button>
+         
+
+<!--
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+            <div class="caption">
+                <h3>Thumbnail label</h3>
+                <p>Lorem Ipsum!</p>
+              
+            </div>
+            </div>
+            </div>
+            
+            <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+            <div class="caption">
+                <h3>Thumbnail label</h3>
+                <p>Lorem Ipsum!</p>
+             
+            </div>
+            </div>
+            </div>
+            
+            <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+            <div class="caption">
+                <h3>Thumbnail label</h3>
+                <p>Lorem Ipsum!</p>
+             
+            </div>
+            </div>
+            </div>
+        </div>
+-->
+
+<!--
             <div class="btnContainer">
-            	<input type="submit" class="btn" value="CHALLENGE DESTINY">
-            </div><!--btnContainer-->
-            <img class="img-responsive border-call" src="images/border_call.svg">
-        </div><!--main-->
+            	<input type="submit" class="btn btn-lg btn-success" value="CHALLENGE DESTINY">
+            </div>
+-->
+            
+    
         
         <?php
 			include_once("includes/footer.php");
 		?>
         
     </div><!--wrapper-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    
 </body>
 </html>
